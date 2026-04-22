@@ -28,8 +28,7 @@
 }
 
 .app__controls {
-    display: flex;
-    justify-content: center;
+    justify-self: center;
     padding-bottom: $space-md;
 }
 
@@ -56,7 +55,7 @@
 
     .app__controls {
         grid-area: controls;
-        justify-content: flex-start;
+        justify-self: start;
         padding-left: $space-lg;
         padding-bottom: 0;
     }
