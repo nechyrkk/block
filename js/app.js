@@ -21,7 +21,7 @@
     valueInput.value = String(initialValue);
 
     valueInput.addEventListener('input', function () {
-        var sanitized = valueInput.value.replace(/[^\d]/g, '');
+        var sanitized = valueInput.value.replace(/[^\d]/g, '').replace(/^0+(?=\d)/, '');
         if (sanitized !== valueInput.value) {
             valueInput.value = sanitized;
         }
