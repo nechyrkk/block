@@ -1,0 +1,43 @@
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: $space-md;
+    width: 100%;
+    max-width: 260px;
+}
+
+.controls__row {
+    display: flex;
+    align-items: center;
+    gap: $space-md;
+    cursor: pointer;
+    user-select: none;
+}
+
+.controls__label {
+    font-size: 15px;
+    color: $color-text;
+}
+
+.controls__input {
+    width: 56px;
+    height: 32px;
+    padding: 0 $space-sm;
+    border: 1px solid $color-border;
+    border-radius: $radius-pill;
+    background: $color-bg;
+    text-align: center;
+    font-variant-numeric: tabular-nums;
+    outline: none;
+    transition: border-color 120ms ease-out;
+
+    &:focus {
+        border-color: $color-accent;
+    }
+}
+
+.controls__input::-webkit-outer-spin-button,
+.controls__input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
